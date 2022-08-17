@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "wip:"
+git-wip
+
+echo "switch:"
+git switch $@
+
+echo "unwip:"
+git-unwip

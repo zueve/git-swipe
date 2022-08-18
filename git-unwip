@@ -2,15 +2,16 @@
 
 for i in 1 2 3 4 5 6 7 8 9
 do
-    COMMENT=$(git log --pretty=format:'%s' |head -$i | tail -1)
+    COMMENT=$(git log --pretty=format:'%s' -$i | tail -1)
     if case $COMMENT in WIP:*) false;; esac; then
-        COMMIT=$(git log --pretty=format:'%h' |head -$i | tail -1)
+        COMMIT=$(git log --pretty=format:'%H' -$i | tail -1)
         break
     fi
 done
 
 if case $i in "1") false;; esac; then
     echo "Reset to $COMMIT: $COMMENT"
-    git reset --soft $COMMIT
-    # git restore --staged .
+    git reset --mixed $COMMIT
+else
+    echo "Nothing to unwip"
 fi

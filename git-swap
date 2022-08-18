@@ -1,10 +1,10 @@
 #!/bin/sh
 
-echo "wip:"
+echo "\033[1mwip:\033[0m"
 git-wip
 
-echo "switch:"
+echo "\033[1mswitch:\033[0m"
 git switch $@
 
-echo "unwip:"
+echo "\033[1munwip:\033[0m"
 git-unwip

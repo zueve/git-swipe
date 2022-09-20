@@ -1,9 +1,13 @@
-# GIT SWIPE
 
-Few commands for extend GTI:
+<img src="./git-swipe.svg" width="200" />
+
+# Get Swipe
+
+Three commands for improve your git experience:
+
 - **git wip** - create WIP commit *(comment starter with "WIP:..")* with all changes in current brunch
 - **git unwip** - reset last (max 9) WIP commits
-- **git swipe** - is git wip -> switch -> unwip
+- **git swipe** - is: git wip + switch + unwip
 
 ## Usage ##
 ```bash
@@ -12,11 +16,13 @@ Few commands for extend GTI:
 
 ## Install ##
 
-```sh
+```bash
+> git clone https://github.com/zueve/git-swipe.git
+> cd git-swipe
 > sudo make install
 ```
 
 ## Remove ##
-```sh
+```bash
 > sudo make uninstall
 ```

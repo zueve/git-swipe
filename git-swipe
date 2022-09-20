@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -o pipefail
+
 echo "\033[1mwip:\033[0m"
 git-wip
 

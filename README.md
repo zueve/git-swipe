@@ -1,5 +1,5 @@
 
-<img src="./git-swipe.svg" width="200" />
+<img src="./logo.svg" width="200" />
 
 # Get Swipe
 

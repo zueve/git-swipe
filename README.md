@@ -1,8 +1,10 @@
 
-<img src="./logo.svg" width="200" />
 
-# Get Swipe
+# Git Swipe
 
+<img src="./logo.png" width="200" />
+
+-----
 Three commands for improve your git experience:
 
 - **git wip** - create WIP commit *(comment starter with "WIP:..")* with all changes in current brunch
